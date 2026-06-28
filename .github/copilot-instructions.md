@@ -1,0 +1,4 @@
+- [x] Create a browser-based hand-tracking demo using MediaPipe Hands, HTML, CSS, and JavaScript.
+- [x] Provide a static web starter project with a local server command.
+- [x] Include `README.md` with setup instructions.
+- [ ] Verify the project launches successfully.

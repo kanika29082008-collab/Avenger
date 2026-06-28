@@ -1,0 +1,10 @@
+{
+  "name": "avenger-hand-tracking",
+  "version": "1.0.0",
+  "description": "Browser-based hand tracking demo with MediaPipe Hands and Avengers-inspired gesture effects.",
+  "scripts": {
+    "start": "python -m http.server 5500"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Avenger Hand Tracking",
+      "type": "pwa-browser",
+      "request": "launch",
+      "url": "http://localhost:5500",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Start Local Server"
+    }
+  ]
+}

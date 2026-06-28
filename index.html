@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avenger Hand Tracking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header>
+        <h1>Avenger Hand Tracking</h1>
+        <p>Use hand gestures to trigger Iron Man, Spider-Man, and Wanda visual effects.</p>
+      </header>
+
+      <main>
+        <div class="video-frame">
+          <video id="video" playsinline autoplay muted></video>
+          <canvas id="output"></canvas>
+        </div>
+
+        <aside class="status-panel">
+          <div class="status-card">
+            <h2>Detected gesture</h2>
+            <p id="gesture">Initializing...</p>
+          </div>
+          <div class="status-card">
+            <h2>Status</h2>
+            <p id="status">Press Start Camera to begin.</p>
+            <button id="startButton" type="button" class="start-button">Start Camera</button>
+          </div>
+          <div class="status-card">
+            <h2>Debug</h2>
+            <pre id="debug" class="debug-panel">No data yet.</pre>
+          </div>
+          <div class="status-card">
+            <h2>Tips</h2>
+            <ul>
+              <li>Open palm = Iron Man repulsor</li>
+              <li>Index + pinky = Spider-Man web</li>
+              <li>Fist = Wanda energy</li>
+            </ul>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js?v=2"></script>
+  </body>
+</html>

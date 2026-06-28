@@ -1,0 +1,142 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0d14;
+  --panel: rgba(18, 24, 42, 0.95);
+  --text: #eef2ff;
+  --accent: #ff4e5b;
+  --accent-soft: #ff4e5b33;
+  --shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e2a55 0%, #080b16 60%);
+  color: var(--text);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+header p {
+  margin: 0.75rem auto 0;
+  max-width: 34rem;
+  color: #c8d2ff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1.7fr 0.9fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.video-frame {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #000;
+  min-height: 520px;
+  box-shadow: var(--shadow);
+}
+
+#video,
+#output {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.status-card {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.status-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9fb3ff;
+}
+
+#gesture {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.start-button {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff4e5b, #7b6cff);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.start-button:hover {
+  transform: translateY(-1px);
+}
+
+.start-button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.debug-panel {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #d7deff;
+  white-space: pre-wrap;
+}
+
+.status-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #d7deff;
+}
+
+.status-card li {
+  margin-bottom: 0.55rem;
+}
+
+@media (max-width: 840px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
