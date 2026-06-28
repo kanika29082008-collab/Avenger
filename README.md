@@ -1,5 +1,7 @@
 # Avenger Hand Tracking Demo
 
+GitHub: https://github.com/kanika29082008-collab/Avenger
+
 A browser-based hand tracking demo using MediaPipe Hands, HTML, CSS, and JavaScript.
 This project recognizes simple hand gestures and displays Avengers-inspired visual effects:
 
@@ -9,14 +11,15 @@ This project recognizes simple hand gestures and displays Avengers-inspired visu
 
 ## Run locally
 
-1. Install Python if you do not already have it.
-2. Run:
+1. Install Python and Node.js if you do not already have them.
+2. Open a terminal in the project folder and run:
 
 ```bash
+npm install
 npm start
 ```
 
-3. Open `http://localhost:5500` in your browser.
+3. Open `http://localhost:5500/` in your browser.
 
 ## Files
 
